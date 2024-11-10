@@ -31,7 +31,18 @@ class Designer : Employee() {
     }
 }
 
+class Director: Empoyee(){
 
+    override fun haveLunch(){
+        super.haveLunch()
+        println("Возможно чуть раньше)")
+    }
+    override fun goHome(){
+        println("После обеда незаметно уйду")
+    }
+
+    
+}
 class Teamlead : Employee() {
 
     override fun haveLunch() {
